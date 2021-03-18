@@ -1,6 +1,5 @@
-package ar.com.lobby;
+package ar.com.Chat;
 
-import ar.com.login.login;
 import java.awt.Color;
 import java.awt.Container;
 
@@ -15,6 +14,7 @@ public class Lobby extends javax.swing.JFrame {
 
     public Lobby() {
         initComponents();
+        setTitle("AllConnected_BETA");
         setSize(450,580);
         this.setLocationRelativeTo(null);
         setResizable(false);

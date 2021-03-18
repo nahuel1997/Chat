@@ -1,7 +1,6 @@
-package ar.com.login;
+package ar.com.Chat;
 
-import ar.com.lobby.Lobby;
-import ar.com.registro.Registro;
+import ar.com.Chat.Lobby;
 import java.awt.Color;
 import java.sql.*;
 
@@ -15,6 +14,7 @@ public class login extends javax.swing.JFrame {
      * Creates new form login
      */
     public login() {
+        setTitle("AllConnected_BETA");
         initComponents();
         this.setLocationRelativeTo(null);
     }

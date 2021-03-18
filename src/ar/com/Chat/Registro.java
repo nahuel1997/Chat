@@ -1,5 +1,5 @@
-package ar.com.registro;
-import ar.com.login.login;
+package ar.com.Chat;
+import ar.com.Chat.login;
 import java.awt.Color;
 import java.sql.*;
 import javax.swing.JOptionPane;
@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 public class Registro extends javax.swing.JFrame {
 
     public Registro() {
+        setTitle("AllConnected_BETA");
         initComponents();
         setSize(360,380);
         this.setLocationRelativeTo(null);
@@ -172,7 +173,6 @@ public class Registro extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox1)
                         .addGap(18, 18, 18)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
