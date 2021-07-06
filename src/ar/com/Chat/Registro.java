@@ -192,7 +192,7 @@ public class Registro extends javax.swing.JFrame {
         try{
             String st=jPasswordField3.getText();
             String st2=jPasswordField4.getText();
-            Connection cn=DriverManager.getConnection("");
+            Connection cn=DriverManager.getConnection("jdbc:mysql://sql10.freesqldatabase.com:3306/sql10423224","sql10423224","JGnD1XHL1R");
              PreparedStatement pst = cn.prepareStatement("insert into usuarios values (?,?,?,?)") ;
              if(st.equals(st2)){
                 pst.setString(1,"0");

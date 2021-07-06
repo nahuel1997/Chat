@@ -140,13 +140,13 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Lobby a = new Lobby();
+        Selector a = new Selector();
         user = jTextField2.getText().trim();
         pass = jPasswordField1.getText().trim();
          try{
             
-            Connection cn=DriverManager.getConnection("");
-            PreparedStatement pst = cn.prepareStatement("") ;
+            Connection cn=DriverManager.getConnection("jdbc:mysql://sql10.freesqldatabase.com:3306/sql10423224","sql10423224","JGnD1XHL1R");
+            PreparedStatement pst = cn.prepareStatement("select * from usuarios where Usuario ='"+ user +"'and Contraseña ='"+pass+"'") ;
             
             ResultSet rs = pst.executeQuery();
             
