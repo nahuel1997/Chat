@@ -3,6 +3,7 @@ package ar.com.Chat;
 import ar.com.Chat.Lobby;
 import java.awt.Color;
 import java.sql.*;
+import javax.swing.JTextField;
 
 /**
  *
@@ -13,6 +14,8 @@ public class login extends javax.swing.JFrame {
     /**
      * Creates new form login
      */
+    String user ="";
+    String pass ="";
     public login() {
         setTitle("AllConnected_BETA");
         initComponents();
@@ -138,26 +141,28 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Lobby a = new Lobby();
-        try{
-            Connection cn=DriverManager.getConnection("jdbc:mysql://localhost/db_chat","root","");
-            PreparedStatement pst = cn.prepareStatement("select * from usuarios where ID = ?") ;
-            pst.setString(4,jTextField2.getText().trim());
+        user = jTextField2.getText().trim();
+        pass = jPasswordField1.getText().trim();
+         try{
+            
+            Connection cn=DriverManager.getConnection("");
+            PreparedStatement pst = cn.prepareStatement("") ;
             
             ResultSet rs = pst.executeQuery();
             
-            if(rs.equals(jTextField2)){
+            if(rs.next()){
+                dispose();
                 a.setVisible(true);
-                this.setVisible(false); 
+                
             }else{
                 jLabel4.setText("*el usuario es invalida.");
                 jLabel4.setForeground(Color.red);
             }
             
-        }catch(Exception e){
+        }catch(SQLException e){
             
         }               
-        a.setVisible(true);
-        this.setVisible(false);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

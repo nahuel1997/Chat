@@ -192,7 +192,7 @@ public class Registro extends javax.swing.JFrame {
         try{
             String st=jPasswordField3.getText();
             String st2=jPasswordField4.getText();
-            Connection cn=DriverManager.getConnection("jdbc:mysql://localhost/db_chat","root","");
+            Connection cn=DriverManager.getConnection("");
              PreparedStatement pst = cn.prepareStatement("insert into usuarios values (?,?,?,?)") ;
              if(st.equals(st2)){
                 pst.setString(1,"0");

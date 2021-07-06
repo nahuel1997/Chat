@@ -137,7 +137,7 @@ public class Lobby extends javax.swing.JFrame {
         jMenuBar2.setBorderPainted(false);
         jMenuBar2.setEnabled(false);
 
-        jMenu2.setText("file");
+        jMenu2.setText("File");
 
         jMenuItem3.setText("Exit");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
