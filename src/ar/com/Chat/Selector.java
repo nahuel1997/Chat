@@ -2,7 +2,7 @@
 package ar.com.Chat;
 
 /**
- *
+ *  
  * @author nahue
  */
 public class Selector extends javax.swing.JFrame {
