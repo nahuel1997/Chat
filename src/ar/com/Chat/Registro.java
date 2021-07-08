@@ -1,5 +1,5 @@
 package ar.com.Chat;
-import ar.com.Chat.login;
+import ar.com.Chat.Login;
 import java.awt.Color;
 import java.sql.*;
 import javax.swing.JOptionPane;
@@ -227,7 +227,7 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        login b = new login();
+        Login b = new Login();
         b.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
