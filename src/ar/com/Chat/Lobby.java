@@ -245,7 +245,7 @@ public class Lobby extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        Login a = new Login();
+        login a = new login();
         a.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
